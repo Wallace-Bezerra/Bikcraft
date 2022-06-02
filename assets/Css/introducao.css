@@ -1,56 +1,59 @@
-.introducao-bg{
-    background-color:var(--c12);
-    height: 680px;
+.introducao-bg {
+    background-color: var(--c12);
+    box-shadow: inset 0 -120px 0 white;
+
 }
-.introducao-container{
+
+.introducao-container {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* border: 5px solid red; */
-
+    gap: 40px;
+    border: 5px solid blue;
+    padding: 20px;
 }
 
-.bike-intro{
-    max-width: 640px;
-    max-height: 800px;
-    object-fit:cover;
-
-}
-
-.introducao h1{
+.introducao h1 {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     font-size: 64px;
-    line-height: 72px;
+    line-height: 1.12;
     color: var(--w);
     margin-bottom: 32px;
     align-items: center;
+    border: 5px solid green;
+
 }
-.introducao{
-    display: flex;
+
+.introducao {
+    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-bottom: 120px;
+    /* margin-bottom: 120px; */
+
     border: 5px solid red;
-    
+
 }
-.introducao p{
+
+.introducao p {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     color: var(--c5);
-    line-height: 36px;
+    line-height: 1.50;
     margin-top: 0px;
+    /* max-width: 40ch; */
 }
-.ponto{
+
+.ponto {
     color: var(--p1);
 }
 
-.btn{
+.btn {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -58,8 +61,53 @@
     line-height: 24px;
     display: inline-block;
 
-    padding: 16px 32px;
-    background-color: #F2A50C;
     color: var(--p5);
+    padding: 16px 32px;
+    background: linear-gradient(180deg, #FFBF00 0%, #F2A50C 100%);
     border-radius: 5px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: linear-gradient(180deg, #FFB60D 0%, #E59317 100%);
+}
+
+.bike-intro {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+@media(max-width:1185px) {
+    .introducao h1 {
+        font-size: 48px;
+    }
+
+    .introducao p {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:992px) {
+    .introducao p {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:934px) {
+    .introducao-container {
+        grid-template-columns: 1fr;
+    }
+
+    .btn {
+        padding: 12px 16px;
+        font-size: 16px;
+    }
+
+    .bike-intro {
+        height: 400px;
+        width: 100%;
+    }
 }
