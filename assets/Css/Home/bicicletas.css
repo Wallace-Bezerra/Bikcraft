@@ -1,7 +1,11 @@
-section {
+.bicicletas-lista {
     max-width: 1300px;
     border: 5px solid blue;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
 }
 
 .bicicletas {
@@ -11,7 +15,7 @@ section {
     display: flex;
     gap: 40px;
     /* justify-content: center; */
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     border: 5px solid yellow;
     overflow-x: auto;
 
@@ -24,14 +28,9 @@ section {
 
 }
 
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.bicicletas-lista {}
 
-}
-
-section h1 {
+.bicicletas-lista h1 {
     margin-left: 160px;
 }
 
@@ -46,8 +45,10 @@ section h1 {
 
 .bicicletas li h2 {
 
-    position: relative;
+    display: flex;
+    align-items: center;
     margin: 0px;
+
 }
 
 .descricao {
@@ -59,21 +60,21 @@ section h1 {
     content: "";
     display: inline-block;
     background-color: var(--p2);
-    width: 12px;
-    height: 8px;
-    position: absolute;
-    left: -20px;
-    top: 16px;
-    transition: .7s;
+    width: 1.2rem;
+    height: 0.8rem;
+    margin-right: 7px;
+    transition: .5s;
 }
 
 .bicicletas li p {
     margin-top: 8px;
+    padding-left: 20px;
 }
 
 .motion:hover h2::before {
-    width: 24px;
+    width: 20px;
 }
+
 
 
 @media (max-width:1000px) {
@@ -83,6 +84,10 @@ section h1 {
 
     section h1 {
         margin-left: 0px;
+    }
+
+    .bicicletas {
+        padding: 15px;
     }
 
 }
