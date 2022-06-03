@@ -1,19 +1,27 @@
 section {
-    max-width: 1400px;
-    /* border: 5px solid blue; */
+    max-width: 1300px;
+    border: 5px solid blue;
     margin: 0 auto;
 }
 
 .bicicletas {
-    max-width: 1300px;
+    max-width: 100%;
     margin: 0 auto;
     margin-bottom: 120px;
     display: flex;
-    flex-wrap: wrap;
     gap: 40px;
-    justify-content: center;
-    box-sizing: border-box;
+    /* justify-content: center; */
+    /* box-sizing: border-box; */
     border: 5px solid yellow;
+    overflow-x: auto;
+
+
+}
+
+.bicicletas li {
+    min-width: 280px;
+    flex: 1;
+
 }
 
 section {
@@ -28,15 +36,12 @@ section h1 {
 }
 
 .bicicletas img {
-    max-width: 380px;
+    max-width: 100%;
+
     border-radius: 8px;
     object-fit: cover;
     margin-bottom: 16px;
 
-}
-
-.bicicletas li {
-    grid-row: 2;
 }
 
 .bicicletas li h2 {
@@ -47,22 +52,29 @@ section h1 {
 
 .descricao {
     margin-left: 25px;
+    transition: .7s;
 }
 
 .bicicletas li h2::before {
     content: "";
-    display: block;
+    display: inline-block;
     background-color: var(--p2);
     width: 12px;
     height: 8px;
     position: absolute;
     left: -20px;
     top: 16px;
+    transition: .7s;
 }
 
 .bicicletas li p {
     margin-top: 8px;
 }
+
+.motion:hover h2::before {
+    width: 24px;
+}
+
 
 @media (max-width:1000px) {
     section {
@@ -72,4 +84,5 @@ section h1 {
     section h1 {
         margin-left: 0px;
     }
+
 }
