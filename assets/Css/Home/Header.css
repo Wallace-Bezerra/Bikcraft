@@ -19,10 +19,6 @@
     /* border: 5px solid yellow; */
 }
 
-
-
-.logo {}
-
 .header-menu {
     display: flex;
     flex-wrap: wrap;
@@ -31,13 +27,7 @@
 }
 
 .menu-item {
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 32px;
-    color: var(--w);
+    color: inherit;
     display: inline-block;
     padding: 16px 0px;
     position: relative;
@@ -53,7 +43,7 @@
     width: 0%;
     height: 2px;
     opacity: 0;
-    background-color: white;
+    background-color: var(--p1);
 
     transition: 0.8s;
 }
