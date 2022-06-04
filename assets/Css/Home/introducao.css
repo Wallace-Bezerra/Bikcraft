@@ -1,46 +1,37 @@
 .introducao-bg {
     background-color: var(--c12);
     box-shadow: inset 0 -120px 0 var(--w);
+    position: relative;
 
 }
 
-.introducao-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-bottom: 100px;
+/* .introducao-bg::before {
+    content: "";
+    background-image: url("/assets/img/dec/bottom-left.svg");
+    background-size: cover;
+    max-width: 52px;
+    width: 52px;
+    height: 52px;
+    display: inline-block;
+    position: absolute;
+    bottom: 18.0rem;
+    left: 8.0rem;
+} */
+
+.introducao {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    /* border: 5px solid blue; */
-    padding: 20px;
+    margin-bottom: 100px;
 }
 
-.introducao h1 {
+.introducao-info h1 {
     margin-bottom: 32px;
     align-items: center;
-    /* border: 5px solid green; */
-
-}
-
-.introducao {
-    /* display: flex; */
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    /* margin-bottom: 120px; */
-
-    /* border: 5px solid red; */
-
 }
 
 .introducao p {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 1.50;
-    margin-top: 0px;
-    /* max-width: 40ch; */
+    margin-bottom: 20px;
 }
 
 .bike-intro {
@@ -48,27 +39,26 @@
     height: 100%;
     border-radius: 5px;
     object-fit: cover;
-
 }
 
 @media(max-width:1185px) {
-    .introducao h1 {
+    .introducao-info h1 {
         font-size: 48px;
     }
 
-    .introducao p {
+    .introducao-info p {
         font-size: 20px;
     }
 }
 
 @media(max-width:992px) {
-    .introducao p {
+    .introducao-info p {
         font-size: 18px;
     }
 }
 
 @media(max-width:934px) {
-    .introducao-container {
+    .introducao {
         grid-template-columns: 1fr;
         margin: 0px;
     }
