@@ -1,28 +1,17 @@
-@import url(/assets/Css/Header.css);
+@import url(/assets/Css/Utilidades/tipografia.css);
+@import url(/assets/Css/Utilidades/cores.css);
+@import url(/assets/Css/Utilidades/componentes.css);
+@import url(/assets/Css/Home/header.css);
+@import url(/assets/Css/Home/introducao.css);
+@import url(/assets/Css/Home/bicicletas.css);
+@import url(/assets/Css/Home/tecnologia.css);
 
-:root {
-    --p5: #332200;
-    --p4: #664400;
-    --p3: #A66F00;
-    --p2: #E4A30B;
-    --p1: #FFBB00;
-
-    --c12: #000000;
-    --c11: #111111;
-    --c10: #2E2E2E;
-    --c9: #404040;
-    --c8: #595959;
-    --c7: #717171;
-    --c6: #9C9C9C;
-    --c5: #B2B2B2;
-    --c4: #CCCCCC;
-    --c3: #DEDEDE;
-    --c2: #EDEDED;
-    --c1: #F7F7F7;
-    --w: #FFFFFF;
-}
-
-body {
+body,
+p,
+h1,
+h2,
+h3,
+h4 {
     margin: 0px;
 }
 
