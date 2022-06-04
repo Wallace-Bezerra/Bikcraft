@@ -1,0 +1,68 @@
+.depoimentos {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.depoimentos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fundo {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--p1);
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: end;
+    padding-bottom: 80px;
+    padding-left: 60px;
+    padding-right: 40px;
+    padding-top: 90px;
+}
+
+.fundo h3 {
+    font-family: 'Merriweather';
+    font-style: italic;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 48px;
+
+
+}
+
+.fundo span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    display: inline-block;
+}
+
+@media(max-width:1230px) {
+    .fundo h3 {
+        font-size: 28px;
+    }
+}
+
+@media(max-width:900px) {
+    .depoimentos {
+        grid-template-columns: 1fr;
+    }
+
+    .depoimentos img {
+        max-height: 600px;
+    }
+}
+
+@media(max-width:600px) {
+    .fundo h3 {
+        font-size: 22px;
+        line-height: 38px;
+    }
+}

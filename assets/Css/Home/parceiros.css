@@ -12,19 +12,33 @@
     margin: 0 auto;
     grid-template-columns: repeat(4, 1fr);
     position: relative;
-
 }
 
-.parceiros-logo img {
+li:hover path {
+    fill: var(--p2);
+}
+
+li:hover svg {
+    transform: scale(1.2);
+}
+
+.parceiros-logo li svg {
     max-width: 100%;
+    transition: .8s ease;
+    padding: 48px;
+}
+
+.parceiros-logo li path {
+    width: 10px;
+
 }
 
 .parceiros-logo li {
     display: flex;
+    max-width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 46px;
-    /* max-width: 100%; */
+
     border-left: 2px solid var(--c2);
 }
 
@@ -74,7 +88,6 @@
         max-width: 350px;
         grid-template-columns: 1fr;
     }
-
 
 
     .parceiros-logo li:nth-child(n) {
