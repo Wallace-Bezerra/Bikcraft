@@ -18,7 +18,7 @@
     background-color: var(--c12);
     max-width: 560px;
     flex: 1;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .prata,
@@ -89,13 +89,16 @@
         font-size: 48px;
     }
 
+    .planos {
+        gap: 40px;
+    }
+
     .planos h3 {
         font-size: 32px;
     }
 
-    .preco h3,
-    .preco span {
-        font-size: 20px;
+    .preco h3 {
+        font-size: 24px;
     }
 
     .preco {
