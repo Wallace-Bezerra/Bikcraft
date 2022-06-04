@@ -60,7 +60,7 @@
 @media(max-width:934px) {
     .introducao {
         grid-template-columns: 1fr;
-        margin: 0px;
+        margin-bottom: 50px;
     }
 
     .btn {

@@ -1,11 +1,9 @@
 .bicicletas-lista {
     max-width: 1300px;
-    border: 5px solid blue;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
 }
 
 .bicicletas {
@@ -14,8 +12,8 @@
     margin-bottom: 120px;
     display: flex;
     gap: 40px;
+    padding: 15px;
     box-sizing: border-box;
-    border: 5px solid yellow;
     overflow-x: auto;
 }
 
@@ -26,6 +24,7 @@
 
 .bicicletas-lista h1 {
     margin-left: 160px;
+    margin-bottom: 20px;
 }
 
 .bicicletas img {
@@ -75,9 +74,8 @@
     }
 
     .bicicletas {
-        padding: 15px;
+        margin-bottom: 30px;
     }
-
 }
 
 @media(max-width:700px) {

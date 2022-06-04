@@ -47,15 +47,17 @@
     .header {
         justify-content: center;
         flex-direction: column;
+        gap: 35px;
+        padding: 30px;
     }
 
     .header-menu {
         gap: 20px;
-
     }
 
     .menu-item {
         background-color: var(--c11);
+        font-size: 22px;
         padding: 10px 14px;
         border-radius: 10px;
     }
@@ -73,7 +75,8 @@
 
 @media(max-width:500px) {
     .menu-item {
+
         padding: 6px 10px;
-        font-size: 14px;
+        font-size: 20px;
     }
 }
