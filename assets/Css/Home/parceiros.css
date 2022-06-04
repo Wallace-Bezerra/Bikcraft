@@ -60,6 +60,11 @@ li:hover svg {
         padding: 10px;
     }
 
+    .parceiros {
+        display: flex;
+        justify-content: center;
+    }
+
     .parceiros-logo li:nth-child(n+3) {
         border-top: 2px solid var(--c2);
     }
@@ -82,6 +87,8 @@ li:hover svg {
 
     .parceiros h2 {
         margin: 10px;
+        font-size: 50px;
+
     }
 
     .parceiros-logo {

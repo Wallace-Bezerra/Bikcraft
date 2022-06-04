@@ -1,5 +1,6 @@
 .depoimentos {
-    max-width: 100%;
+    margin: 0 auto;
+    max-width: 1300px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
@@ -11,7 +12,7 @@
     object-fit: cover;
 }
 
-.fundo {
+.depoimento-conteudo {
     width: 100%;
     box-sizing: border-box;
     background-color: var(--p1);
@@ -25,17 +26,15 @@
     padding-top: 90px;
 }
 
-.fundo h3 {
+.depoimento-conteudo p {
     font-family: 'Merriweather';
     font-style: italic;
     font-weight: 900;
     font-size: 36px;
     line-height: 48px;
-
-
 }
 
-.fundo span {
+.depoimento-conteudo span {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -45,7 +44,7 @@
 }
 
 @media(max-width:1230px) {
-    .fundo h3 {
+    .depoimento-conteudo p {
         font-size: 28px;
     }
 }
@@ -61,7 +60,7 @@
 }
 
 @media(max-width:600px) {
-    .fundo h3 {
+    .depoimento-conteudo p {
         font-size: 22px;
         line-height: 38px;
     }
