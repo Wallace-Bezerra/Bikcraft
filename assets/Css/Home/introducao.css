@@ -5,19 +5,6 @@
 
 }
 
-/* .introducao-bg::before {
-    content: "";
-    background-image: url("/assets/img/dec/bottom-left.svg");
-    background-size: cover;
-    max-width: 52px;
-    width: 52px;
-    height: 52px;
-    display: inline-block;
-    position: absolute;
-    bottom: 18.0rem;
-    left: 8.0rem;
-} */
-
 .introducao {
     display: grid;
     grid-template-columns: 1fr 1fr;
