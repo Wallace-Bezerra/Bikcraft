@@ -1,13 +1,14 @@
 @import url(/assets/Css/Utilidades/tipografia.css);
 @import url(/assets/Css/Utilidades/cores.css);
 @import url(/assets/Css/Utilidades/componentes.css);
-@import url(/assets/Css/Home/header.css);
+@import url(/assets/Css/Global/Header.css);
 @import url(/assets/Css/Home/introducao.css);
 @import url(/assets/Css/Home/bicicletas.css);
 @import url(/assets/Css/Home/tecnologia.css);
 @import url(/assets/Css/Home/parceiros.css);
 @import url(/assets/Css/Home/depoimento.css);
-@import url(/assets/Css/Home/seguros.css);
+@import url(/assets/Css/Seguros/seguros.css);
+@import url(/assets/Css/Global/footer.css);
 
 body,
 p,
