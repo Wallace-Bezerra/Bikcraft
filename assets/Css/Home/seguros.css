@@ -19,10 +19,6 @@
     max-width: 560px;
     flex: 1;
     border-radius: 8px;
-}
-
-.prata,
-.ouro {
     padding: 32px 32px 32px 64px;
     display: flex;
     justify-content: space-between;
@@ -33,34 +29,29 @@
     margin-bottom: 40px;
 }
 
-.prata p,
-.ouro p {
+.prata li,
+.ouro li {
     margin-bottom: 20px;
     position: relative;
 }
 
-.planos p::before {
+.vantagens li {
+    position: relative;
+}
+
+.vantagens li::before {
     content: "";
     background-image: url(/assets/img/icones/lista.svg);
     width: 13px;
     height: 9px;
     display: inline-block;
     position: absolute;
-    top: 7px;
+    top: 5px;
     left: -22px;
 }
 
-.prata-info p:nth-child(5) {
-    margin-bottom: 40px;
-}
-
-.ouro p:nth-child(7) {
-    margin-bottom: 40px;
-}
-
-.prata-info .btn {
-    background: var(--c10);
-    color: var(--c4);
+.vantagens li:last-child {
+    margin-bottom: 32px;
 }
 
 .preco {
