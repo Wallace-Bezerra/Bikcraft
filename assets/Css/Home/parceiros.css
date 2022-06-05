@@ -91,6 +91,10 @@ li:hover svg {
 
     }
 
+    .parceiros-logo li svg {
+        max-width: 200px;
+    }
+
     .parceiros-logo {
         max-width: 350px;
         grid-template-columns: 1fr;
