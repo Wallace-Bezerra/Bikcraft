@@ -1,0 +1,24 @@
+.titulo-bg {
+    background-color: var(--c11);
+}
+
+.titulo {
+    padding-block: 60px;
+}
+
+.termos {
+    padding-block: 120px;
+}
+
+.termos h2 {
+    margin-bottom: 20px;
+}
+
+.termos p {
+    margin-bottom: 20px;
+    max-width: 75ch;
+}
+
+.termos p+h2 {
+    margin-top: 48px;
+}

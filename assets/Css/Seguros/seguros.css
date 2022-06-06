@@ -2,6 +2,10 @@
     background-color: var(--c11);
 }
 
+.seguro {
+    padding-bottom: 120px;
+}
+
 .seguro h2 {
     padding-bottom: 60px;
     padding-top: 60px;
@@ -76,6 +80,11 @@
 }
 
 @media(max-width:600px) {
+
+    .seguro {
+        padding-bottom: 80px;
+    }
+
     .seguro h1 {
         font-size: 48px;
     }
