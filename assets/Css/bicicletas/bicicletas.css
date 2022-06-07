@@ -1,6 +1,7 @@
 .bicicletas {
     display: grid;
     gap: 120px;
+    padding-block: 120px;
 }
 
 .bicicletas-card {
@@ -12,24 +13,47 @@
 .bicicletas-card img {
     max-width: 100%;
     border-radius: 5px;
+
 }
 
 .bicicleta-conteudo {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .bicicleta-conteudo h2 {
     grid-column: 1/-1;
+    margin-bottom: 20px;
 }
 
 .bicicleta-conteudo p {
     grid-column: 1/-1;
+    margin-bottom: 32px;
 }
 
 .bicicleta-conteudo a {
     display: inline-block;
     max-width: max-content;
     justify-self: end;
-    grid-row: 4;
+    align-self: flex-end;
+    grid-row: 3;
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+
+.bicicletas ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.bg {
+
+    background-color: var(--c11);
+    box-shadow: 0px 60px 0px var(--c11), 0px -60px 0px var(--c11);
 }
