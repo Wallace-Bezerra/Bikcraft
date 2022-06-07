@@ -121,3 +121,20 @@
         padding-block: 60px;
     }
 }
+
+@media(max-width:400px) {
+    .bicicleta-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .bicicleta-conteudo ul {
+        grid-column: 1;
+    }
+
+    .bicicleta-conteudo a {
+        grid-column: 1;
+        grid-row: 5;
+        justify-self: start;
+        margin-top: 30px;
+    }
+}
