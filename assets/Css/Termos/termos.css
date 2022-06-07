@@ -22,3 +22,13 @@
 .termos p+h2 {
     margin-top: 48px;
 }
+
+@media(max-width:600px) {
+    .titulo h1 {
+        font-size: 48px;
+    }
+
+    .titulo p {
+        font-size: 18px;
+    }
+}
