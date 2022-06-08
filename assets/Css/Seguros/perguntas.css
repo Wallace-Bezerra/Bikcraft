@@ -20,7 +20,7 @@
 .pergunta-seta img {
 
     transform: rotate(180deg);
-
+    padding-right: 20px;
 }
 
 .pergunta-seta .aberta {
@@ -28,6 +28,8 @@
     align-self: flex-start;
     padding-top: 10px;
     padding-left: 20px;
+    padding-right: 0px;
+
 }
 
 .pergunta-item:nth-child(odd) {
