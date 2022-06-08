@@ -1,0 +1,29 @@
+.bicicletas-grid-bg {
+    background-color: var(--c11);
+}
+
+.bicicletas-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px
+}
+
+.bicicletas-grid img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.biciletas-fotos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.nimbus-img {
+    grid-column: 1/-1;
+}
+
+.nimbus-descricao p {
+    margin-bottom: 32px;
+}
