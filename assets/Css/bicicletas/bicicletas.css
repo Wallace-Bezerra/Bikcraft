@@ -71,6 +71,11 @@
     display: flex;
     gap: 16px;
     align-items: center;
+    transition: .5s ease;
+}
+
+.bicicleta-conteudo a:hover .seta {
+    transform: translateX(5px);
 }
 
 .bicicleta-img {
@@ -102,6 +107,8 @@
     margin-bottom: 8px;
     background-color: var(--p1);
 }
+
+
 
 @media(max-width:1020px) {
     .bicicletas-card {

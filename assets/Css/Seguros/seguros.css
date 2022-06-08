@@ -11,6 +11,10 @@
     padding-top: 60px;
 }
 
+#seguros .seguro {
+    padding-top: 40px;
+}
+
 .planos {
     display: flex;
     gap: 20px;

@@ -1,0 +1,33 @@
+.vantegens-bg {
+    background-color: var(--c12);
+}
+
+.vantagens-seguro {
+    padding-block: 120px;
+}
+
+.vantagens-seguro h2 {
+
+    margin-bottom: 92px;
+}
+
+.vantagens-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.vantagens-lista h3,
+.vantagens-lista img {
+    margin-bottom: 8px;
+}
+
+@media(max-width:600px) {
+    .vantagens-seguro {
+        padding-block: 60px;
+    }
+
+    .vantagens-seguro h2 {
+        font-size: 48px;
+    }
+}
