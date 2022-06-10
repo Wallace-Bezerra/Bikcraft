@@ -7,6 +7,7 @@
 
 .bicicletas-home {
     margin: 0 auto;
+    max-width: 100%;
     margin-bottom: 120px;
     display: flex;
     gap: 40px;

@@ -57,12 +57,11 @@
     margin-bottom: 40px;
 }
 
-.nimbus-descricao .info {
+.nimbus-grid .info {
     padding: 4px 8px;
     background-color: var(--c12);
-    display: flex;
-
-    /* align-items: center; */
+    display: grid;
+    grid-template-columns: auto 1fr;
     gap: 8px;
     border-radius: 5px;
 
@@ -123,15 +122,45 @@
 @media(max-width:900px) {
     .bicicletas-grid {
         grid-template-columns: 1fr;
+        padding-bottom: 60px;
+    }
+
+    .bicicletas-grid-bg {
+        margin-bottom: 40px;
     }
 
     .bicicletas-fotos {
         grid-row: 2;
     }
+
+    #nimbus .titulo {
+        padding-bottom: 10px;
+    }
+
+    .nimbus-descricao {
+        margin-bottom: 30px;
+    }
 }
 
 @media(max-width:700px) {
     .nimbus-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nimbus-grid a {
+        margin-bottom: 12px;
+    }
+}
+
+@media(max-width:600px) {
+    .bicicletas-grid p {
+        font-size: 18px;
+
+    }
+}
+
+@media(max-width:560px) {
+    .vantagens-nimbus {
         grid-template-columns: 1fr;
     }
 }
