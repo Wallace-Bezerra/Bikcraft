@@ -1,5 +1,4 @@
 .bicicletas-lista {
-    max-width: 1300px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -7,7 +6,6 @@
 }
 
 .bicicletas-home {
-    max-width: 100%;
     margin: 0 auto;
     margin-bottom: 120px;
     display: flex;
@@ -15,6 +13,7 @@
     padding: 15px;
     box-sizing: border-box;
     overflow-x: auto;
+    border: 5px solid
 }
 
 .bicicletas-home li {
@@ -73,7 +72,7 @@
         margin-left: 0px;
     }
 
-    .bicicletas-home{
+    .bicicletas-home {
         margin-bottom: 30px;
     }
 }
