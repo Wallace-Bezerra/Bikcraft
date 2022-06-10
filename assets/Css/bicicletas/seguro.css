@@ -1,0 +1,33 @@
+.bicicleta-seguro-bg {
+    background-color: var(--c11);
+    box-shadow: inset 0px 120px 0px var(--w), inset 0px -120px 0px var(--c12);
+}
+
+.bicicleta-seguro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 20px;
+    align-items: center;
+}
+
+.bicicleta-seguro img {
+    width: 100%;
+}
+
+.bicicleta-seguro h2 {
+    margin-top: 60px;
+    margin-bottom: 32px;
+}
+
+.bicicleta-seguro p {
+    margin-bottom: 20px;
+}
+
+.bicicleta-seguro a {
+    margin-bottom: 60px;
+}
+
+#nimbus .bicicletas-home {
+    margin-bottom: 60px;
+}

@@ -13,7 +13,6 @@
     padding: 15px;
     box-sizing: border-box;
     overflow-x: auto;
-    border: 5px solid
 }
 
 .bicicletas-home li {
@@ -22,7 +21,7 @@
 }
 
 .bicicletas-lista h1 {
-    margin-left: 160px;
+    margin-left: 60px;
     margin-bottom: 20px;
 }
 
