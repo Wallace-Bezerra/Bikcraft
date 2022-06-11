@@ -26,7 +26,7 @@
     min-width: 200px;
 }
 
-.bicicletas-fotos .nimbus-img {
+.bicicletas-fotos img:first-child {
     min-width: 100%;
 }
 
