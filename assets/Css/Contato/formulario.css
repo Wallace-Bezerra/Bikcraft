@@ -1,0 +1,50 @@
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    /* border: 5px solid red; */
+    width: 100%;
+}
+
+.form input,
+#mensagem {
+    background-color: var(--c2);
+    border: 1px solid #EDEDED;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+.contatos-formulario {
+
+    padding: 60px 0px 40px 60px;
+}
+
+.form a {
+    grid-column: 1/-1;
+    width: max-content;
+}
+
+.telefone-form,
+.nome {
+    width: 100%;
+}
+
+.nome,
+.telefone-form,
+.email-form,
+.mensagem {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.email-form,
+.mensagem {
+    grid-column: 1/-1;
+    width: 100%;
+}
+
+#email,
+#mensagem {
+    width: 96%;
+}

@@ -1,0 +1,33 @@
+.contatos {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.contatos-info {
+    background-color: var(--c12);
+    padding: 60px 187px 132px 60px;
+    display: grid;
+    gap: 32px;
+}
+
+.contatos-info ul {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: flex-start;
+    gap: 11px;
+}
+
+.contatos-info h2 {
+    margin-bottom: 28px;
+}
+
+.telefone {
+    margin-bottom: 28px;
+}
+
+.contatos-info .contatos-rede {
+    display: flex;
+    gap: 32px;
+    padding-left: 31px;
+}
