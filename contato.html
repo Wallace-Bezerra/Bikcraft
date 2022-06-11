@@ -41,10 +41,10 @@
             </div>
         </section>
 
-        <article class="container">
-            <div class="contatos">
+        <article class="contatos-bg">
+            <div class="contatos container">
                 <div class="contatos-info font-2-s w">
-                    <h2 class="font-1-s">Loja Online</h2>
+                    <h2 class="font-1-l">Loja Online</h2>
 
                     <ul class="endereco">
                         <div>
@@ -53,59 +53,57 @@
                         <div>
                             <li>Rua Ali Perto,35</li>
                             <li>São Paulo - SP</li>
-                            <li>Brasi</li>
+                            <li>Brasil</li>
                         </div>
                     </ul>
 
-                    <ul class="email">
+                    <address class="contatos-meios c4">
                         <div>
                             <img src="/assets/img/icones/email.svg" alt="">
                         </div>
                         <div>
-                            <li>vendas@bikcraft.com</li>
-                            <li>assistencia@bikcraft.com</li>
+                            <a href="mailto:vendas@bikcraft.com">vendas@bikcraft.com</a>
+                            <a href="mailto:assistencia@bikcraft.com">assistencia@bikcraft.com</a>
                         </div>
-                    </ul>
 
-                    <ul class="telefone">
                         <div>
                             <img src="/assets/img/icones/telefone.svg" alt="">
                         </div>
                         <div>
-                            <li> +55 21 9999-9999</li>
+                            <a href="tel:+552199999999">+55 21 9999-9999</a>
                         </div>
-                    </ul>
+                    </address>
 
                     <ul class="contatos-rede">
-                        <li> <img src="/assets/img/redes/instagram-p.svg" alt=""></li>
-                        <li> <img src="/assets/img/redes/facebook-p.svg" alt=""></li>
-                        <li> <img src="/assets/img/redes/youtube-p.svg" alt=""></li>
+                        <li> <a href=""><img src="/assets/img/redes/instagram-p.svg" alt=""></a></li>
+                        <li> <a href=""><img src="/assets/img/redes/facebook-p.svg" alt=""></a></li>
+                        <li> <a href=""> <img src="/assets/img/redes/youtube-p.svg" alt=""></a></li>
                     </ul>
                 </div>
 
                 <div class="contatos-formulario">
-                    <form class="form font-2-s" action="">
+                    <form class="form font-1-s" action="./contato.html">
                         <div class="nome">
-                            <label for="">Nome</label>
+                            <label for="nome">Nome</label>
                             <input id="nome" type="text" placeholder="Seu nome">
                         </div>
 
                         <div class="telefone-form">
-                            <label for="">Telefone</label>
-                            <input id="telefone" type="text" placeholder="(21) 9999-9999">
+                            <label for="telefone">Telefone</label>
+                            <input id="telefone" type="text" placeholder="(11) 9999-9999">
                         </div>
 
                         <div class="email-form">
-                            <label for="">Email</label>
-                            <input id="email" type="text" placeholder="contato@email.com">
+                            <label for="email">Email</label>
+                            <input id="email" type="email" placeholder="contato@email.com">
                         </div>
 
                         <div class="mensagem">
-                            <label for="">Mensagem</label>
-                            <textarea name="" id="mensagem" cols="30" rows="10" placeholder="O que você precisa?"></textarea>
+                            <label for="mensagem">Mensagem</label>
+                            <textarea name="" id="mensagem" cols="30" rows="7" placeholder="O que você precisa?"></textarea>
                         </div>
 
-                        <a class="font-1-m btn primario" href="">ENVIAR MENSAGEM</a>
+                        <button type="submit" class="font-1-m btn primario">ENVIAR MENSAGEM</button>
                     </form>
                 </div>
             </div>

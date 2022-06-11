@@ -1,0 +1,125 @@
+.contatos-formulario {
+    background-color: var(--w);
+    padding: 60px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* .form label {
+    display: block;
+} */
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: var(--c2);
+    border: 1px solid #EDEDED;
+    border-radius: 5px;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form textarea:focus {
+    outline: none;
+    border: 2px solid rgb(249, 212, 5);
+    box-shadow: 0 0 0 2px #fea;
+    background-color: var(--w);
+}
+
+
+
+
+.form button {
+    grid-column: 1/-1;
+    width: max-content;
+}
+
+/* .telefone-form,
+.nome {
+    width: 100%;
+} */
+
+.nome,
+.telefone-form,
+.email-form,
+.mensagem {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.email-form,
+.mensagem {
+    grid-column: 1/-1;
+    width: 100%;
+}
+
+/* #email,
+#mensagem {
+    width: 100%;
+} */
+
+
+@media(max-width:1050px) {
+    .contatos {
+        margin-inline: 20px;
+    }
+
+
+}
+
+@media(max-width:965px) {
+    .contatos-bg {
+        padding-bottom: 60px;
+    }
+
+    .contatos {
+        grid-template-columns: 1fr;
+    }
+
+    .contatos-info,
+    .contatos-formulario {
+        padding: 40px;
+    }
+
+    .contatos-info {
+        border-radius: 5px 5px 0 0;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contatos-formulario {
+        border-radius: 0 0 5px 5px;
+    }
+
+}
+
+@media(max-width:560px) {
+    .contatos-info {
+        grid-template-columns: 1fr;
+    }
+
+    .form {
+        grid-template-columns: 1fr;
+    }
+}

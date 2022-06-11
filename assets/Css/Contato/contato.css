@@ -1,33 +1,75 @@
+.contatos-bg {
+    background-color: var(--c1);
+    box-shadow: inset 0px 300px 0px var(--c11);
+    padding-bottom: 120px;
+}
+
+
 .contatos {
     box-sizing: border-box;
     display: grid;
+    max-width: 100%;
     grid-template-columns: 1fr 2fr;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-inline: 40px
+}
+
+#contato .contatos {
+    padding: 0px;
 }
 
 .contatos-info {
     background-color: var(--c12);
     padding: 60px 187px 132px 60px;
     display: grid;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-content: flex-start;
     gap: 32px;
 }
 
-.contatos-info ul {
+
+
+.contatos-info ul,
+.contatos-meios {
     display: grid;
     grid-template-columns: max-content 1fr;
     align-items: flex-start;
     gap: 11px;
 }
 
+.contatos-meios {
+    row-gap: 32px;
+}
+
+.contatos-meios a:hover {
+    color: var(--w);
+
+}
+
+.contatos-meios a {
+    color: inherit;
+    display: block;
+}
+
+
 .contatos-info h2 {
     margin-bottom: 28px;
 }
 
-.telefone {
-    margin-bottom: 28px;
+.endereco {
+    margin-bottom: 0px;
 }
 
 .contatos-info .contatos-rede {
     display: flex;
     gap: 32px;
+    padding-top: 28px;
     padding-left: 31px;
+}
+
+.contatos-rede a:hover {
+    opacity: 70%;
 }
