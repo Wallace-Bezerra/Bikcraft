@@ -10,11 +10,6 @@
     padding-bottom: 60px;
     padding-top: 60px;
 }
-
-#seguros .seguro {
-    padding-top: 40px;
-}
-
 .planos {
     display: flex;
     gap: 20px;
@@ -86,7 +81,8 @@
 @media(max-width:600px) {
 
     .seguro {
-        padding-bottom: 80px;
+        padding-top: 0px;
+        padding-bottom: 60px;
     }
 
     .seguro h1 {
@@ -107,5 +103,9 @@
 
     .preco {
         padding-left: 10px;
+    }
+
+    #seguros .titulo {
+        padding-block: 40px;
     }
 }

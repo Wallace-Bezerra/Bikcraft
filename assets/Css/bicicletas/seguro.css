@@ -1,7 +1,6 @@
 .bicicleta-seguro-bg {
     background-color: var(--c11);
     box-shadow: inset 0px 120px 0px var(--w), inset 0px -120px 0px var(--c12);
-    border: 5px solid red;
 }
 
 .bicicleta-seguro {
@@ -13,7 +12,6 @@
 }
 
 .seguro-img {
-    border: 5px solid blue;
     height: 100%;
 }
 
