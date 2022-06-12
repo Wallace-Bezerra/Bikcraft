@@ -175,6 +175,10 @@
 }
 
 @media(max-width:860px) {
+    .orcamento {
+        margin-bottom: 60px;
+    }
+
     .orcamento-detalhes li {
         font-size: initial;
     }
@@ -210,5 +214,9 @@
     .orcamento-detalhes ul {
         display: grid;
         grid-template-columns: 1fr;
+    }
+
+    #check {
+        font-size: 12px;
     }
 }

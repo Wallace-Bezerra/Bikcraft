@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade,  feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.">
+    <link rel="preload" href="assets/Css/style.css" as="style">
     <link rel="stylesheet" href="assets/Css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -126,35 +127,39 @@
 
                     <h2 class="font-1-s c5 col2">entrega</h2>
                     <div>
-                        <label for="nome">CEP</label>
-                        <input id="nome" type="text">
+                        <label for="cep">CEP</label>
+                        <input id="cep" type="text">
                     </div>
 
                     <div>
-                        <label for="Sobrenome">Número</label>
-                        <input id="Sobrenome" type="text">
+                        <label for="numero">Número</label>
+                        <input id="numero" type="text">
                     </div>
                     <div>
-                        <label for="nome">Logradouro</label>
-                        <input id="nome" type="text" placeholder="Rua, avenida...">
-                    </div>
-
-                    <div>
-                        <label for="Sobrenome">Bairro</label>
-                        <input id="Sobrenome" type="text">
+                        <label for="logradouro">Logradouro</label>
+                        <input id="logradouro" type="text" placeholder="Rua, avenida...">
                     </div>
 
                     <div>
-                        <label for="Sobrenome">Cidade</label>
-                        <input id="Sobrenome" type="text">
+                        <label for="bairro">Bairro</label>
+                        <input id="bairro" type="text">
                     </div>
 
                     <div>
-                        <select name="" id="">
-                            <option value="" aria-placeholder="">teste</option>
+                        <label for="cidade">Cidade</label>
+                        <input id="cidade" type="text">
+                    </div>
+
+                    <div>
+                        <label for="estado">Estado</label>
+                        <select name="" id="estado">
+                            <option value="" disabled selected hidden>Selecione</option>
+                            <option value="sp">São Paulo</option>
+                            <option value="rj">Rio de Janeiro</option>
+                            <option value="mg">Minas Gerais</option>
                         </select>
                     </div>
-                    <div class="col2">
+                    <div class="checkbox col2">
                         <input type="checkbox">
                         <label class="font-1-s " id="check" for="">Li e aceito os termos e condições.</label>
                     </div>

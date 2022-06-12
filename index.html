@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade,  feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.">
+    <link rel="preload" href="assets/Css/style.css" as="style">
     <link rel="stylesheet" href="assets/Css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +17,7 @@
 <body>
     <header class="header-bg">
         <div class="header container">
-            <a href="./"><img class="logo" src="../assets/img/bikcraft.svg" alt="bikcraft"></a>
+            <a href="./"><img class="logo" src="../assets/img/bikcraft.svg" width=136 height=32 alt="bikcraft"></a>
             <nav>
                 <ul class="header-menu font-1-m w">
                     <li>
@@ -42,9 +43,10 @@
                     Explore o mundo na sua velocidade com a Bikcraft.</p>
                 <a class="font-1-m-b btn primario" href="/bicicletas.html">Selecione a sua</a>
             </div>
-            <div class="img">
+            <picture class="img">
+                <source media="(max-width:930px)" srcset="../assets/img/bicicletas/nimbus.jpg">
                 <img class="bike-intro" src="../assets/img/fotos/introducao.jpg" alt="Bicicleta preta">
-            </div>
+            </picture>
     </main>
 
     <article class="bicicletas-lista container">
