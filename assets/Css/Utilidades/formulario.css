@@ -13,9 +13,10 @@
     width: 100%;
 }
 
-/* .form label {
-    display: block;
-} */
+.col2 {
+    grid-column: 1/-1;
+}
+
 
 .form input[type="text"],
 .form input[type="email"],
@@ -42,23 +43,12 @@
     background-color: var(--w);
 }
 
-
-
-
 .form button {
     grid-column: 1/-1;
     width: max-content;
 }
 
-/* .telefone-form,
-.nome {
-    width: 100%;
-} */
-
-.nome,
-.telefone-form,
-.email-form,
-.mensagem {
+form label {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -69,24 +59,15 @@
     gap: 4px;
 }
 
-.email-form,
-.mensagem {
-    grid-column: 1/-1;
-    width: 100%;
+form label[id="check"] {
+    display: inline-block;
+    /* border: 5px solid blue; */
 }
-
-/* #email,
-#mensagem {
-    width: 100%;
-} */
-
 
 @media(max-width:1050px) {
     .contatos {
         margin-inline: 20px;
     }
-
-
 }
 
 @media(max-width:965px) {

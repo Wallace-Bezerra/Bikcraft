@@ -1,0 +1,77 @@
+.lojas h2 {
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+.lojas-card {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+}
+
+.lojas-bg {
+    background-color: var(--w);
+}
+
+.lojas-card img {
+    width: 100%;
+}
+
+.lojas-card h3 {
+    margin-block: 32px;
+    /* padding-left: 60px; */
+    position: relative;
+    /* display: flex;
+    align-items: center;
+    gap: 12px; */
+}
+
+.lojas-card h3::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 17px;
+    left: -24px;
+    width: 12px;
+    height: 8px;
+    background-color: var(--p1);
+}
+
+
+.loja-conteudo {
+    padding-left: 60px;
+    padding-bottom: 32px;
+}
+
+
+.lojas-info {
+    display: flex;
+    gap: 60px;
+}
+
+.lojas-info div {
+    border-left: 3px solid var(--c2);
+    padding-left: 12px;
+    padding-block: 6px;
+    margin-bottom: 32px;
+
+}
+
+.loja-conteudo span img {
+    width: auto;
+}
+
+.loja-conteudo span {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+
+@media(max-width:1100px) {
+    .lojas-card {
+        grid-template-columns: 1fr;
+    }
+}
