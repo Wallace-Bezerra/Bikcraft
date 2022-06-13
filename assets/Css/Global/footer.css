@@ -10,6 +10,11 @@
     padding-bottom: 40px;
 }
 
+.footer a {
+    align-self: flex-start;
+    justify-self: flex-start;
+}
+
 .footer-copy {
     grid-column: 1/-1;
 }
