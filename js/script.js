@@ -32,22 +32,39 @@ function ativarResposta(event) {
     const elementoAria = event.currentTarget.getAttribute("aria-controls");
     const resposta = document.getElementById(elementoAria);
     if (resposta) {
-        const r = resposta.classList.toggle("ativa");
-        if (r) {
-            event.currentTarget.ariaExpanded = true;
-        }
-        else {
-            event.currentTarget.ariaExpanded = false;
-        }
-
-
+        resposta.classList.toggle("ativa");
+        const ariaExpanded = resposta.classList.contains("ativa");
+        event.currentTarget.ariaExpanded = ariaExpanded;
     }
-
 }
 function clique(i) {
     i.addEventListener('click', ativarResposta);
     console.log(i);
+
 }
 perguntas.forEach(clique);
 
+// Trocar imagem
 
+const bicicletaFotos = document.querySelectorAll(".bicicletas-fotos img");
+const bicicleta = document.querySelector(".bicicletas-fotos img");
+const tela = window.innerWidth;
+console.log(tela);
+function trocarImg(event) {
+    if (window.innerWidth >= 460) {
+        const eventoSrc = event.currentTarget.src;
+        const eventoAlt = event.currentTarget.alt;
+        event.currentTarget.src = bicicleta.src;
+        bicicleta.src = eventoSrc;
+        bicicleta.alt = eventoAlt;
+    }
+
+};
+
+function clique(i) {
+    i.addEventListener('click', trocarImg);
+};
+
+bicicletaFotos.forEach(clique);
+// console.log(bicicletaFotos);
+// console.log(bicicleta);
