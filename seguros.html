@@ -54,7 +54,7 @@
                                 <li class="font-2-m">Suporte 08h às 18h</li>
                                 <li class="font-2-m">Cobertura estadual</li>
                             </ul>
-                            <a href="/orcamento.html" class="font-1-m-b btn secundario">INSCREVA-SE</a>
+                            <a href="/orcamento.html?tipo=seguro&produto=prata" class="font-1-m-b btn secundario">INSCREVA-SE</a>
                         </div>
                         <div class="preco">
                             <h3 class="font-1-xl">R$ 199</h3>
@@ -74,7 +74,7 @@
                                 <li class="font-2-m">Desconto em parceiros</li>
                                 <li class="font-2-m">Acesso ao Clube Bikcraft</li>
                             </ul>
-                            <a href="/orcamento.html" class="font-1-m-b btn primario">INSCREVA-SE</a>
+                            <a href="/orcamento.html?tipo=seguro&produto=ouro" class="font-1-m-b btn primario">INSCREVA-SE</a>
                         </div>
                         <div class="preco">
                             <h3 class="font-1-xl">R$ 299</h3>
@@ -135,60 +135,66 @@
             <ul class="perguntas-lista">
                 <li class="pergunta-item">
                     <div>
-                        <h4 class="font-1-m-b">Qual forma de pagamento vocês aceitam?</h4>
-                        <p class="font-2-m c9">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
+
+                        <button class="font-1-m-b perguntas-btn" aria-controls="pergunta1" aria-expanded="true">Qual forma de pagamento vocês aceitam?</button>
+
+                        <p id="pergunta1" class="font-2-m c9 ativa">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
                     </div>
-                    <div class="pergunta-seta ">
-                        <img class="aberta" src="/assets/img/icones/seta-abrir.svg" alt="">
-                    </div>
+
                 </li>
                 <li class="pergunta-item">
                     <div>
-                        <h4 class="font-1-m-b">Como posso entrar em contato?</h4>
+                        <button class="font-1-m-b perguntas-btn" aria-controls="pergunta2" aria-expanded="false">
+                            Como posso entrar em contato?
+                        </button>
+                        <p id="pergunta2" class="font-2-m c9 ">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
                     </div>
-                    <div class="pergunta-seta">
-                        <img src="/assets/img/icones/seta-abrir.svg" alt="">
-                    </div>
+
                 </li>
                 <li class="pergunta-item">
                     <div>
-                        <h4 class="font-1-m-b">Vocês possuem algum desconto?</h4>
+                        <button class="font-1-m-b perguntas-btn" aria-controls="pergunta3" aria-expanded="false">
+                            Vocês possuem algum desconto?
+                        </button>
+                        <p id="pergunta3" class="font-2-m c9">Teste de JavaScript</p>
                     </div>
-                    <div class="pergunta-seta">
-                        <img src="/assets/img/icones/seta-abrir.svg" alt="">
-                    </div>
+
                 </li>
                 <li class="pergunta-item">
                     <div>
-                        <h4 class="font-1-m-b">Qual a garantia que possuo?</h4>
+                        <button class="font-1-m-b perguntas-btn" aria-controls="pergunta4" aria-expanded="false">
+                            Qual a garantia que possuo?
+                        </button>
+                        <p id="pergunta4" class="font-2-m c9">Teste de JavaScript</p>
                     </div>
-                    <div class="pergunta-seta">
-                        <img src="/assets/img/icones/seta-abrir.svg" alt="">
-                    </div>
+
                 </li>
                 <li class="pergunta-item">
                     <div>
-                        <h4 class="font-1-m-b">Posso parcelar no boleto?</h4>
+                        <button class="font-1-m-b perguntas-btn" aria-controls="pergunta5" aria-expanded="false">
+                            Posso parcelar no boleto?
+                        </button>
+                        <p id="pergunta5" class="font-2-m c9">Teste de JavaScript</p>
                     </div>
-                    <div class="pergunta-seta">
-                        <img src="/assets/img/icones/seta-abrir.svg" alt="">
-                    </div>
+
                 </li>
                 <li class="pergunta-item">
                     <div>
-                        <h4 class="font-1-m-b">Quantas trocas posso fazer ao ano?</h4>
+                        <button class="font-1-m-b perguntas-btn" aria-controls="pergunta6" aria-expanded="false">
+                            Quantas trocas posso fazer ao ano?
+                        </button>
+                        <p id="pergunta6" class="font-2-m c9">Teste de JavaScript</p>
                     </div>
-                    <div class="pergunta-seta">
-                        <img src="/assets/img/icones/seta-abrir.svg" alt="">
-                    </div>
+
                 </li>
                 <li class="pergunta-item">
                     <div>
-                        <h4 class="font-1-m-b">Qual Bikcraft devo escolher para o meu tamanho?</h4>
+                        <button class="font-1-m-b perguntas-btn" aria-controls="pergunta7" aria-expanded="false">
+                            Qual Bikcraft devo escolher para o meu tamanho?
+                        </button>
+                        <p id="pergunta7" class="font-2-m c9">Teste de JavaScript</p>
                     </div>
-                    <div class="pergunta-seta">
-                        <img src="/assets/img/icones/seta-abrir.svg" alt="">
-                    </div>
+
                 </li>
             </ul>
         </article>
@@ -219,7 +225,7 @@
                 <ul class="font-2-m c5">
                     <li> <a href="/bicicletas.html"> Bicicletas</li></a>
                     <li> <a href="/seguros.html"> Seguros</li></a>
-                    <li> <a href=""> Contato</li></a>
+                    <li> <a href="/contato.html"> Contato</li></a>
                     <li> <a href="/termos.html">Termos e Condições</li></a>
                 </ul>
             </div>
@@ -227,7 +233,7 @@
             <p class="footer-copy font-2-m c6">Bikcraft © Alguns direitos reservados.</p>
         </div>
     </footer>
-
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

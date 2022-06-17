@@ -38,6 +38,11 @@
     transition: 0.8s;
 }
 
+.ativarlink::after {
+    width: 100%;
+    opacity: 1;
+}
+
 .menu-item:hover.menu-item::after {
     width: 100%;
     opacity: 1;
