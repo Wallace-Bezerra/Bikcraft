@@ -20,18 +20,14 @@
 
 .lojas-card h3 {
     margin-block: 32px;
-    /* padding-left: 60px; */
     position: relative;
-    /* display: flex;
+    display: flex;
     align-items: center;
-    gap: 12px; */
 }
 
 .lojas-card h3::before {
     content: "";
-    display: inline-block;
     position: absolute;
-    top: 17px;
     left: -24px;
     width: 12px;
     height: 8px;
@@ -41,6 +37,7 @@
 
 .loja-conteudo {
     padding-left: 60px;
+    padding-right: 60px;
     padding-bottom: 32px;
 }
 
@@ -73,5 +70,13 @@
 @media(max-width:1100px) {
     .lojas-card {
         grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:520px) {
+    .lojas-info {
+        flex-wrap: wrap;
+        padding-bottom: 0px;
+        gap: initial;
     }
 }
