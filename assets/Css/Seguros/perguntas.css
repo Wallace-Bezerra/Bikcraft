@@ -7,12 +7,12 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     border: none;
-    width: 100%;
     text-align: left;
     background: none;
     cursor: pointer;
+
 }
 
 .pergunta-item button[aria-expanded="true"]::after {
@@ -44,7 +44,9 @@
     margin-bottom: 88px;
 }
 
-
+.perguntas-btn {
+    padding-inline: 10px;
+}
 
 .pergunta-item button::before {
     content: "";
@@ -61,9 +63,15 @@
     content: "";
     background-image: url(/assets/img/icones/seta-abrir.svg);
     background-repeat: no-repeat;
+    background-position: center;
     display: inline-block;
-    width: 15px;
+    /* position: absolute; */
+    right: 0px;
+    width: 14px;
     height: 6px;
+    padding-left: 12px;
+
+
     transition: .5s ease;
 }
 
@@ -85,5 +93,9 @@ p.ativa {
     .perguntas h2 {
         font-size: 48px;
         margin-bottom: 60px;
+    }
+
+    .pergunta-item button {
+        gap: 14px;
     }
 }
