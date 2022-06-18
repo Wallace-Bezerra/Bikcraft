@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400&family=Roboto:wght@400;500&family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
     <title>BikCraft - Bicicletas Elétricas</title>
+    <script>document.querySelector("html").classList.add("js");</script>
 </head>
 
 <body>
@@ -37,13 +38,13 @@
     <main class="introducao-bg">
         <div class="introducao container">
             <div class="introducao-info">
-                <h1 class="font-1-xxl w">Bicicletas feitas sob medida<span class="p1">.</span></h1>
-                <p class="font-2-l c5">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o
+                <h1 class="font-1-xxl w fadeInTeste" data-anime="400">Bicicletas feitas sob medida<span class="p1">.</span></h1>
+                <p class="font-2-l c5 fadeInTeste" data-anime="500">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o
                     cliente.
                     Explore o mundo na sua velocidade com a Bikcraft.</p>
-                <a class="font-1-m-b btn primario" href="/bicicletas.html">Selecione a sua</a>
+                <a class="font-1-m-b btn primario fadeInTeste" data-anime="580" href="/bicicletas.html">Selecione a sua</a>
             </div>
-            <picture class="img">
+            <picture class="img fadeInDown" data-anime="300">
                 <source media="(max-width:930px)" srcset="../assets/img/bicicletas/nimbus.jpg">
                 <img class="bike-intro" src="../assets/img/fotos/introducao.jpg" alt="Bicicleta preta">
             </picture>
@@ -223,7 +224,7 @@
                             <li class="font-2-m">Suporte 08h às 18h</li>
                             <li class="font-2-m">Cobertura estadual</li>
                         </ul>
-                        <a href="" class="font-1-m-b btn secundario">INSCREVA-SE</a>
+                        <a href="/orcamento.html?tipo=seguro&produto=prata" class="font-1-m-b btn secundario">INSCREVA-SE</a>
                     </div>
                     <div class="preco">
                         <h3 class="font-1-xl">R$ 199</h3>
@@ -243,7 +244,7 @@
                             <li class="font-2-m">Desconto em parceiros</li>
                             <li class="font-2-m">Acesso ao Clube Bikcraft</li>
                         </ul>
-                        <a href="" class="font-1-m-b btn primario">INSCREVA-SE</a>
+                        <a href="/orcamento.html?tipo=seguro&produto=ouro" class="font-1-m-b btn primario">INSCREVA-SE</a>
                     </div>
                     <div class="preco">
                         <h3 class="font-1-xl">R$ 299</h3>
@@ -286,6 +287,7 @@
             <p class="footer-copy font-2-m c6">Bikcraft © Alguns direitos reservados.</p>
         </div>
     </footer>
+    <script src="./js/plugins/simple-anime.js"></script>
     <script src="./js/script.js"></script>
 </body>
 

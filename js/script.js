@@ -42,3 +42,10 @@ function clique(i) {
     i.addEventListener('click', ativarResposta);
 }
 perguntas.forEach(clique);
+
+// Ativar animação 
+
+if (window.SimpleAnime) {
+    new window.SimpleAnime();
+}
+

@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400&family=Roboto:wght@400;500&family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
     <title>Seguros</title>
+    <script>document.querySelector("html").classList.add("js");</script>
 </head>
 
 <body id="seguros">
@@ -45,7 +46,7 @@
         <article class="seguro-bg">
             <div class="seguro container">
                 <div class="planos w">
-                    <div class="prata ">
+                    <div class="prata fadeInLeft" data-anime="400">
                         <div class="prata-info">
                             <h3 class="font-1-xl c6">PRATA</h3>
                             <ul class="vantagens">
@@ -63,7 +64,7 @@
 
                     </div>
 
-                    <div class="ouro">
+                    <div class="ouro fadeInRight" data-anime="400">
                         <div>
                             <h3 class="font-1-xl p1">OURO</h3>
                             <ul class="vantagens">
@@ -233,6 +234,7 @@
             <p class="footer-copy font-2-m c6">Bikcraft © Alguns direitos reservados.</p>
         </div>
     </footer>
+    <script src="./js/plugins/simple-anime.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
